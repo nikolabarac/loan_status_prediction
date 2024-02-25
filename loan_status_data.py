@@ -41,3 +41,4 @@ strat_train_set['Credit_History'].value_counts()/len(strat_train_set)
 
 strat_test_set['Credit_History'].value_counts()/len(strat_test_set)
 
+strat_train_set.to_csv('strat_train_set.csv', index = False)
