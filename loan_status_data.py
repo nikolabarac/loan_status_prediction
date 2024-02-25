@@ -40,3 +40,4 @@ df1, test_size=0.2, stratify=df1["Credit_History"], random_state=42)
 strat_train_set['Credit_History'].value_counts()/len(strat_train_set)
 
 strat_test_set['Credit_History'].value_counts()/len(strat_test_set)
+
