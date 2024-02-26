@@ -42,3 +42,9 @@ strat_train_set['Credit_History'].value_counts()/len(strat_train_set)
 strat_test_set['Credit_History'].value_counts()/len(strat_test_set)
 
 strat_train_set.to_csv('strat_train_set.csv', index = False)
+
+loan_data_train_labels = strat_train_set['Loan_Status'].apply(lambda x: 1 if x == 'Y' else 0)
+
+strat_test_set.to_csv('strat_test_set.csv', index = False)
+
+loan_data_train_labels.to_csv('loan_data_train_labels.csv', index = False)
